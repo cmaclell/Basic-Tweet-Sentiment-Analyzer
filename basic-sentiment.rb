@@ -1,6 +1,36 @@
+#############################################################################
+# Filename: basic-sentiment.rb
+# Copyright: Christopher MacLellan 2010
+# Description: This code adds functions to the string class for calculating
+#              the sentivalue of strings. It is not called directly by the
+#              tweet-search-sentiment.rb program but is included for possible 
+#              future use.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#############################################################################
+
+
 class String
   @@sentihash = {}
 
+  #####################################################################
+  # Function that returns the sentiment value for a given string.
+  # This value is the sum of the sentiment values of each of the words.
+  # Stop words are NOT removed.
+  #
+  # return:float -- sentiment value of the current string
+  #####################################################################
   def get_sentiment
     sentiment_total = 0.0
 
