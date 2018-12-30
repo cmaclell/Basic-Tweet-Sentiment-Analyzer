@@ -9,7 +9,7 @@ Contact Information
 ===================
 
 The Ruby code in this project was originally written by Christopher MacLellan 
-in 2010 and he retains all copyrights. If you have any questions he can be 
+in 2010. If you have any questions he can be 
 reached at maclellan (dot) christopher (at) gmail (dot) com.
 
 
